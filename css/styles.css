@@ -1,0 +1,13 @@
+.navbar-brand{
+    font-family: "Lobster", sans-serif;
+}
+
+.img1{
+    width: %;
+    object-fit: cover;
+    height: 250px;
+}
+
+.container2{
+    border-top: 3px solid black;
+}
