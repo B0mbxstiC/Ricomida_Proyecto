@@ -1,33 +1,201 @@
+/* Barra de navegación */
 .navbar-brand{
     font-family: "Lobster", sans-serif;
 }
 
+/* Primera sección con foto de portada */
 .img1{
-    height: 340px;
+    height: 10%;
     object-fit: cover;   
-}
-
-@media (max-width: 768px) {
-    .img1{
-        height: 200px;
-        object-fit: cover;  
-    }
 }
 
 .container2{
     border-top: 3px solid black;
-    width: 80%;
+    width: 100%;
 }
 
+@media (max-width: 768px) {
+    .containerPrincipal{
+        border-top: 3px solid black;
+    }
+}
 .container2 p{
     font-weight: bold;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.divh1 {
-    width: 60%;
-}
 button{
     padding-right: 2em;
     margin-right: 3em;
+}
+/* Caja de título */
+#titulo {
+    text-align: center;
+}
+
+#titulo h1 {
+    font-size: clamp(1em, 4vw, 3em);
+    font-family: "Cabin", sans-serif;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+#titulo p {
+    font-size: 1.2em;
+    font-family: "Cabin", sans-serif;
+    font-weight: bold;
+}
+#titulo button {
+    font-size: 0.8em;
+    font-family: "Cabin", sans-serif;
+    font-weight: bold;
+    padding-left: 1em;
+}
+
+.btn {
+    border: 1px solid grey !important;
+}
+
+
+@media (min-width: 1200px) {
+    #titulo {
+        text-align: left;
+    }
+    #titulo h1 {
+        font-size: 3.2em;
+        font-family: "Cabin", sans-serif;
+        font-weight: bold;
+        padding-top: 20px;
+    }
+    #titulo p {
+        font-size: 2em;
+        font-family: "Cabin", sans-serif;
+        font-weight: bold;
+    }
+    #titulo button {
+        font-size: 1em;
+        font-family: "Cabin", sans-serif;
+        font-weight: bold;
+        padding-left: 2em;
+    }
+}
+
+/* Carrusel  */
+#botonCirculo {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: black;
+}
+
+#botonCirculo:hover {
+    background-color: gray;
+}
+
+article {
+    border-bottom: 3px solid black;
+}
+
+main {
+    font-family: "Cabin", sans-serif;
+    font-size: 1.2em;
+    border-bottom: 3px solid black;
+}
+
+main h2 {
+    font-size: 1.5em;
+}
+
+.containerh2 {
+    border-bottom: 2px solid black;
+    width: 40%;
+}
+
+@media (max-width: 768px) {
+    .containerh2 {
+        border-bottom: 0px;
+    }
+}
+
+/* Tarjetas  */
+.card-body {
+    font-family: "Cabin", sans-serif;
+}
+
+#tituloRecetas{
+    text-transform: uppercase;
+
+}
+
+.card-body img{
+    object-fit: cover;
+}
+
+.card-body h5{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Newsletter */
+#newsletter{
+    color: white;
+    font-family: "Cabin", sans-serif;
+    height: 30em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#newsletter h2{
+    font-weight: bold;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+#newsletter span{
+    font-family: "Lobster", sans-serif;
+}
+
+#newsletter p {
+    font-size: 2em;
+    font-weight: 100;
+}
+
+#newsletter button {
+    font-size: 1em;
+    border: white;
+}
+
+@media (max-width: 768px) {
+    #newsletter {
+        height: 20em;
+    }
+    #newsletter h2{
+        font-size: 2em;
+    }
+    #newsletter span{
+        font-size: 1em;
+    }
+    #newsletter p {
+        font-size: 1em;
+    }
+    #newsletter button {
+        font-size: 0.8em;
+    }
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-family: "Lobster", sans-serif;
+    font-size: 3em;
+}
+
+@media (max-width: 768px) {
+    footer {
+        font-size: 2em;
+    }
 }
